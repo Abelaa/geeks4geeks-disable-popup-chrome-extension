@@ -1,0 +1,19 @@
+{
+  "manifest_version": 3,
+  "name": "geeksforgeeks.com Popup Blocker",
+  "description": "Block the signup Popup window on geeksforgeeks.com",
+  "version": "1.0",
+  "action": {
+    "default_popup": "index.html",
+    "default_icon": "logo.png"
+  },
+  "content_scripts": [
+    {
+      "js": ["content.js"],
+      "matches": [
+        "https://www.geeksforgeeks.org/*",
+        "https://geeksforgeeks.org/*"
+      ]
+    }
+  ]
+}
